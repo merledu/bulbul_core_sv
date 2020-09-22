@@ -21,16 +21,20 @@ if (reset_i == 0)
 	begin
 	if( rd_i !== 0)
 	begin
-		if (regwrite_i !== 0) 
+		if (regwrite_i !== 0) begin
 		registers[rd_i] <= wd_i;
-		else
+		end
+		else begin
 		registers[rd_i] <= wd_i;
+		end
+
 	end
-	else
-	registers[rd_i] <= 32'b0;
+	else begin
+	registers[rd_i] <= 32'b0;	
 	end
-else
-registers[rd_i] <= 32'b0;
+	end
+else begin
+registers[rd_i] <= 32'b0;	
 end
 end
 endmodule: RF
