@@ -68,7 +68,7 @@ end
 end
 else if(aluop_i == 010)
 	begin
-	if(fucn3_i == 000 && func7_i == 1'bx)
+	if(fucn3_i == 000 && func7_i== 1'bx)
 	aluc_o=5'b10000;
 	else if(fucn3_i == 001 && func7_i== 1'bx)begin
 	aluc_o=5'b10001;

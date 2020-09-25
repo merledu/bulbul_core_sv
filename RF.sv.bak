@@ -28,6 +28,6 @@ if (reset_i == 0)
 end
 else 
 registers[rd_i] <= 32'b0;
-end: b_label
 end: a_label
+end: b_label
 endmodule

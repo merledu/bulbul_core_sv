@@ -7,7 +7,7 @@ input logic load_i,
 input logic jalr_i,
 input logic jal_i,
 input logic lui_i,
-output logic [2:0] aluop_o
+output logic [2:0] aluop_o,
 );
 always @ (r_type_i,i_type_i,store_i,branch_i, load_i,jalr_i, jal_i, lui_i)
 begin

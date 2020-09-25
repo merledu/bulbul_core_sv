@@ -1,13 +1,13 @@
 module type_decode(
 input logic [6:0] opcode_i,
-output logic r_type_o,
-output logic i_type_o,
-output logic store_o,
-output logic branch_o,
-output logic load_o,
-output logic jalr_o,
-output logic jal_o,
-output logic lui_o
+output logic r_type_i,
+output logic i_type_i,
+output logic store_i,
+output logic branch_i,
+output logic load_i,
+output logic jalr_i,
+output logic jal_i,
+output logic lui_i
 );
 always @ (opcode_i)
 begin 

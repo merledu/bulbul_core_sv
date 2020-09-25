@@ -4,6 +4,6 @@ input logic [31:0] b_i;
 output logic [31:0] jalr_o;
 always @(a_i,b_i)
 begin 
-jalr_o=(a_i+b_i) & 32'hfffffffe;
+jal_o=(a_i+b_i) & 32'hfffffffe;
 end 
 endmodule: jalr
