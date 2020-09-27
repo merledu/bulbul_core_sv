@@ -8,14 +8,13 @@ output logic[31:0]operandA_o,
 output logic[31:0]operandB_o,
 reg [31:0] registers [0:31]
 );
-begin: a_label
 assign operandA_o = registers[rs1_i];
 assign operandAB_o = registers[rs2_i];
 
 
-always @(posedge clk_i)begin
+always @(posedge clk_i)
 if (reset_i == 0)
-	begin: b_label
+	begin
 	if( rd_i !== 0)
 	begin
 		if (regwrite_i !== 0)
@@ -28,6 +27,4 @@ if (reset_i == 0)
 end
 else 
 registers[rd_i] <= 32'b0;
-end: b_label
-end: a_label
 endmodule

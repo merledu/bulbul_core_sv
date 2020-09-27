@@ -68,28 +68,27 @@ end
 end
 else if(aluop_i == 010)
 	begin
-	if(fucn3_i == 000 && func7_i== 1'bx)
+	if(func3_i == 000 && func7_i == 1'bx)
 	aluc_o=5'b10000;
-	else if(fucn3_i == 001 && func7_i== 1'bx)begin
+	else if(func3_i == 001 && func7_i== 1'bx)begin
 	aluc_o=5'b10001;
 end
-	else if(fucn3_i == 100 && func7_i== 1'bx)begin
+	else if(func3_i == 100 && func7_i== 1'bx)begin
 	aluc_o=5'b10100;
 end
-	else if(fucn3_i == 101 && func7_i== 1'bx)begin
+	else if(func3_i == 101 && func7_i== 1'bx)begin
 	aluc_o=5'b10101;
 end
-	else if(fucn3_i == 110 && func7_i== 1'bx)begin
+	else if(func3_i == 110 && func7_i== 1'bx)begin
 	aluc_o=5'b10110;
 end
-	else if(fucn3_i == 111 && func7_i==1'bx)begin
+	else if(func3_i == 111 && func7_i==1'bx)begin
 	aluc_o=5'b10111;
-end
+	end
 	else begin
 	aluc_o=5'bxxxxx;
 end
 //else 
 //begin
 	//aluc_o=5'bxxxxx;
-//end
 endmodule 
