@@ -88,7 +88,4 @@ end
 	else 
 	aluc_o=5'bxxxxx;
 end
-//else 
-//begin
-	//aluc_o=5'bxxxxx;
 endmodule 

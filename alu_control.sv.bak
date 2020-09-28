@@ -85,8 +85,9 @@ end
 	else if(func3_i == 111 && func7_i==1'bx)begin
 	aluc_o=5'b10111;
 	end
-	else begin
+	else 
 	aluc_o=5'bxxxxx;
+end
 end
 //else 
 //begin

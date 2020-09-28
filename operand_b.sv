@@ -1,4 +1,4 @@
-module operand_A(lui_i,jalr_i,jal_i,opasel_o);
+module operand_b(lui_i,jalr_i,jal_i,opasel_o);
 input logic lui_i;
 input logic jalr_i;
 input logic jal_i;
@@ -20,4 +20,4 @@ begin
 	opasel_o=00;
 end
 end 
-endmodule: operand_A
+endmodule

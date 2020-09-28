@@ -1,5 +1,5 @@
 `timescale 1ns/1ns
-module operand_a_tb;
+module operand_b_tb;
  logic lui_i;
  logic jalr_i;
  logic jal_i;
