@@ -1,5 +1,4 @@
-module alu_control
-(input logic [2:0] aluop_i,
+module alu_control(input logic [2:0] aluop_i,
 input logic [2:0] func3_i,
 input logic func7_i,
 output logic [4:0] aluc_o);
