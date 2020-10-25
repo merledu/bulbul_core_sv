@@ -1,4 +1,4 @@
-`timescale 1ns/1ns
+`timescale 1ns/1ns;
 module jalr_target_tb;
 	logic [31:0] a_i;
 	logic [31:0] b_i;
@@ -12,11 +12,11 @@ module jalr_target_tb;
 	
 	initial begin 
 		#5;
-		a_i <= 7'hfffffff;
-		b_i <= 7'hfffffff;
+		a_i = 7'hfffffff;
+		b_i = 7'hfffffff;
 		
 		#5;
-		a_i <= 7'h00001;
-		b_i <= 7'h00004;
+		a_i = 7'h00001;
+		b_i = 7'h00004;
 	end
 endmodule
