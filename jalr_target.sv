@@ -1,9 +1,8 @@
-module jalr(a_i,b_i,jalr_o);
-input logic [31:0] a_i;
-input logic [31:0] b_i;
-output logic [31:0] jalr_o;
-always @(a_i,b_i)
+`timescale 1ns/1ps
+module jalr_target(input logic [31:0] A_i,
+	input logic [31:0] imm_i,output logic [31:0] jalrt_o);
+always @(A_i,imm_i)
 begin 
-jalr_o=(a_i+b_i) & 32'hfffffffe;
+jalrt_o= ((A_i+imm_i) & 32'hfffffffe);
 end 
-endmodule: jalr
+endmodule 

@@ -16,12 +16,12 @@ logic [31:0] Y_o;
 		.Y_o(Y_o) );
 	initial begin 
 		#5;
-		sel_i = 00;
+		sel_i <= 00;
 		#5;
-		sel_i = 01;
+		sel_i <= 01;
 		#5;
-		sel_i = 10;
+		sel_i <= 10;
 		#5;
-		sel_i = 11;
+		sel_i <= 11;
 		end
 endmodule

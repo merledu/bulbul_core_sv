@@ -12,19 +12,19 @@ module operand_b_tb;
 		.opasel_o(opasel_o));
 	initial begin
 		#5;
-		lui_i = 1;
-		jalr_i = 0;
-		jal_i = 0;
+		lui_i <= 1;
+		jalr_i <= 0;
+		jal_i <= 0;
 
 		#5;
-		lui_i = 0;
-		jalr_i = 0;
-		jal_i = 1;
+		lui_i <= 0;
+		jalr_i <= 0;
+		jal_i <= 1;
 
 		#5;
-		lui_i = 0;
-		jalr_i = 1;
-		jal_i = 0;
+		lui_i <= 0;
+		jalr_i <= 1;
+		jal_i <= 0;
 	end
 
 endmodule 
